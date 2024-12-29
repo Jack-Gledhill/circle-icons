@@ -1,24 +1,27 @@
-# Elegant Themes Circle Icons in SVG format
+# Circle Icons
 
-<img src="https://dohliam.github.io/elegant-circles/svg/image.svg" alt="image" width="100" height="100">
-<img src="https://dohliam.github.io/elegant-circles/svg/bolt.svg" alt="bolt" width="100" height="100">
-<img src="https://dohliam.github.io/elegant-circles/svg/brightness.svg" alt="brightness" width="100" height="100">
+These are a set of open-source icons designed by [Liam Doherty](https://github.com/dohliam/elegant-circles) and released for personal & commercial use under the GPL v2 license.
 
-This repo makes available the [Elegant Themes Circle Icons](https://commons.wikimedia.org/wiki/Category:Elegant_Themes_Circle_Icons) in SVG format.
+This repo is a fork of the designer's own, with an extra script that converts them into various sizes and formats. It's released under the same license.
 
-The icons were originally released on the [Elegant Themes website](http://www.elegantthemes.com/blog/freebie-of-the-week/beautiful-flat-icons-for-free) in PNG format, and were converted to SVG by Wikimedia Commons user [Carl Fredrik](https://commons.wikimedia.org/wiki/User:CFCF).
+## Accessing the icons online
 
-They are provided here for convenience and for ease of use in various applications.
+Like the original repo, this one hosts all of the files via GitHub Pages, so that people can access them via URLs rather than having to download them and store them in their project manually.
 
-## Searching
+The icons can be accessed at [jack-gledhill.github.io/circle-icons](https://jack-gledhill.github.io/circle-icons).
 
-You can search through the icons by name or using tags in the [online demo](https://dohliam.github.io/elegant-circles/).
+## Running the script
 
-## Credits
+Make sure you have Python 3 installed, then install the dependencies with:
 
-* Icons by [Elegant Themes](http://www.elegantthemes.com/blog/freebie-of-the-week/beautiful-flat-icons-for-free). Original versions in PNG, EPS and other formats can be downloaded [here](http://www.elegantthemes.com/blog/freebie-of-the-week/beautiful-flat-icons-for-free)
-* Online demo courtesy of [Jalibut Search](https://github.com/darshandsoni/jalibut) by @darshandsoni
+```shell
+pip install -r requirements.txt
+```
 
-## License
+CairoSVG also requires several extra packages that change depending on your OS. For macOS, do the following:
 
-GPL.
+```shell
+brew install cairo libffi
+```
+
+For Windows and Linux, see the [CairoSVG documentation](https://cairosvg.org/documentation/#installation).
